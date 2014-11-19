@@ -14,5 +14,7 @@ public:
     	
 	int getOpcao() const;
 	void teste();
+	
 	void Menu_Principal();
+	void Menu_Escolha_Personagem();
 };

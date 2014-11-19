@@ -11,7 +11,7 @@ void Menu::Menu_Principal(){
 	cout << "2 - Continuar Jogo" << endl;
 	cout << "3 - Sair" << endl;
 	cout << endl << endl;
-	cout << "Escolha uma das opcoes abaixo" << endl;
+	cout << "Escolha uma das opcoes acima" << endl;
 	
 	cin >> opcao;
 	while(opcao != 3){
@@ -29,7 +29,7 @@ void Menu::Menu_Principal(){
 			break;
 	 default:
      system("cls");
-	 cout << "Opcao invalida. Por favor digite novamente sa opcao";
+	 cout << "Opcao invalida. Por favor digite novamente a opcao";
 	 cin >> opcao;
 	}
 		
@@ -38,6 +38,36 @@ void Menu::Menu_Principal(){
  
 }
 
-void Menu::teste(){
-  cout	<< "hello" << endl;	 
+void Menu::Menu_Escolha_Personagem(){
+  int opcao;
+  string nome;
+  system("cls");
+  cout << "Digite o nome do personagem: ";
+  cin >> nome;
+  
+  cout << "Escolha sua especializacao: " << endl << endl;
+  cout << "1 - Mago" << endl;
+  cout << "2 - Guerreiro" << endl;
+  cout << "3 - Ladino" << endl;
+  cout << endl << endl;
+  cout << "Escolha uma das opcoes acima" << endl;     
+  cin >> opcao;
+  cout << endl;
+  switch(opcao){
+	 case 1:
+			cout << "Mago selecionado " << endl;
+			opcao = 3;
+			break;
+     case 2:
+			cout << "Guerreiro selecionado. " << endl;	  
+			opcao = 3;
+			break;
+     case 3:		
+			cout << "Ladino selecionado" << endl;	
+			break;
+	 default:
+     system("cls");
+	 cout << "Opcao invalida. Por favor digite novamente a opcao";
+	 cin >> opcao;
+	}
  }
