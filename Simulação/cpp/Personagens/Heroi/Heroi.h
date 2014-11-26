@@ -7,13 +7,12 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.h"
-#include "java/Item/Armadura.h"
-#include "java/Item/Equipamento.h"
-#include "java/Movimentacao/Mover.h"
-#include "java/Personagens/Atributos.h"
-#include "java/Personagens/Heroi/Arma.h"
-#include "java/Personagens/Heroi/Acessorio.h"
+#include "Armadura.h"
+#include "Equipamento.h"
+#include "Mover.h"
+#include "Atributos.h"
+#include "Arma.h"
+#include "Acessorio.h"
 
 namespace java
 {
@@ -21,7 +20,7 @@ namespace Personagens
 {
 namespace Heroi
 {
-class Heroi : public java::Personagens::Atributos, public java::Movimentacao::Mover
+class Heroi : 
 {
 protected:
 	java::lang::String nomeHeroi;

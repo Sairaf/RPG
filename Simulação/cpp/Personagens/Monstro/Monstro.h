@@ -7,9 +7,8 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.h"
-#include "java/Magias/Magia.h"
-#include "java/Personagens/Atributos.h"
+#include "Magia.h"
+
 
 namespace java
 {
@@ -17,10 +16,10 @@ namespace Personagens
 {
 namespace Monstro
 {
-class Monstro : public java::Personagens::Atributos
+class Monstro 
 {
 protected:
-	java::Magias::Magia Habilidades;
+	Magia Habilidades;
 
 	int HP;
 
@@ -38,19 +37,19 @@ protected:
 
 	int max_Mp;
 
-	java::lang::String nomeHeroi;
+	string nomeHeroi;
 
-	java::lang::String descricao;
+	string descricao;
 
 
 public:
 	void Monstro();
 
-	void Monstro(java::lang::String nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
+	void Monstro(string nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
 
 	void Monstro();
 
-	void Add_Skill(java::Magias::Magia magia);
+	void Add_Skill(Magia magia);
 
 };
 

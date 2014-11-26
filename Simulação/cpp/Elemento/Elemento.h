@@ -7,7 +7,6 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.h"
 
 namespace java
 {
@@ -16,13 +15,13 @@ namespace Elemento
 class Elemento
 {
 protected:
-	java::lang::String nome_Elemento;
+	string nome_Elemento;
 
 
 public:
 	void Elemento();
 
-	void Elemento(java::lang::String nome);
+	void Elemento(string nome);
 
 	void Elemento();
 

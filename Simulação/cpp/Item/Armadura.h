@@ -7,9 +7,8 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.h"
-#include "java/Item/Item.h"
-#include "java/Item/Equipamento.h"
+#include "Item.h"
+#include "Equipamento.h"
 
 namespace java
 {
@@ -24,7 +23,7 @@ protected:
 public:
 	void Armadura();
 
-	void Armardura(java::lang::String nome, java::lang::String descricao, int b_Atk, int b_Def, int b_Mag, int p_Def);
+	void Armardura(string nome, string descricao, int b_Atk, int b_Def, int b_Mag, int p_Def);
 
 	void Armadura();
 

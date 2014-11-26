@@ -7,10 +7,8 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/Void.h"
-#include "java/lang/String.h"
-#include "java/Item/Item.h"
-#include "java/Elemento/Elemento.h"
+#include "Item.h"
+#include "Elemento.h"
 
 namespace java
 {
@@ -27,13 +25,13 @@ protected:
 
 	int bonus_Vel;
 
-	java::Elemento::Elemento Efeito_elemental;
+	Elemento Efeito_elemental;
 
 
 public:
 	void Equipamento();
 
-	java::lang::Void Equipamento(java::lang::String nome, java::lang::String descricao, int b_Atk, int b_Def, int b_Mag, int b_Vel);
+	java::lang::Void Equipamento(string nome, string descricao, int b_Atk, int b_Def, int b_Mag, int b_Vel);
 
 	void Add_Efeito(java::Elemento::Elemento elemento);
 

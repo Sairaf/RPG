@@ -27,7 +27,7 @@ protected:
 public:
 	void Item();
 
-	void Item(java::lang::String nome, java::lang::String descricao);
+	void Item(string nome, string descricao);
 
 	void Item();
 

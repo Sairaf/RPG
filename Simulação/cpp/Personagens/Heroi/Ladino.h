@@ -7,10 +7,9 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.h"
-#include "java/Item/Equipamento.h"
-#include "java/Personagens/Heroi/Heroi.h"
-#include "java/Personagens/Heroi/Monstro.h"
+#include "Equipamento.h"
+#include "Heroi.h"
+
 
 namespace java
 {
@@ -25,9 +24,9 @@ public:
 
 	void Ladino();
 
-	void Ladino(java::lang::String nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
+	void Ladino(String nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
 
-	void Equipar(java::Item::Equipamento equipamento);
+	void Equipar(const Equipamento&);
 
 	void ladino();
 

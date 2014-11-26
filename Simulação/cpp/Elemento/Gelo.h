@@ -7,18 +7,17 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.h"
 
 namespace java
 {
 namespace Elemento
 {
-class Gelo
+class Gelo: public Elemento
 {
 public:
 	void Gelo();
 
-	void Gelo(java::lang::String nome);
+	void Gelo(string nome);
 
 	void Gelo();
 

@@ -7,10 +7,9 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.h"
-#include "java/Item/Equipamento.h"
-#include "java/Magias/Magia.h"
-#include "java/Personagens/Heroi/Heroi.h"
+#include "Equipamento.h"
+#include "Magia.h"
+#include "Heroi.h"
 
 namespace java
 {
@@ -21,17 +20,17 @@ namespace Heroi
 class Guerreiro : public Heroi
 {
 protected:
-	java::Magias::Magia Tecnica;
+	Magia Tecnica;
 
 
 public:
-	void Adicionar_Tecnica(java::Magias::Magia magia);
+	void Adicionar_Tecnica(Magia magia);
 
 	void Guerreiro();
 
-	void Guerreiro(java::lang::String nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
+	void Guerreiro(string nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
 
-	void Equipar(java::Item::Equipamento equipamento);
+	void Equipar(const Equipamento&);
 
 	void Guerreiro();
 

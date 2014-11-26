@@ -7,8 +7,7 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.h"
-#include "java/Elemento/Elemento.h"
+#include "Elemento.h"
 
 namespace java
 {
@@ -17,19 +16,19 @@ namespace Magias
 class Magia
 {
 protected:
-	java::lang::String nome_Magia;
+	string nome_Magia;
 
 	int poder_Magia;
 
-	java::lang::String descricao_Magia;
+	string descricao_Magia;
 
-	java::Elemento::Elemento elemento;
+	Elemento elemento;
 
 
 public:
 	void Magia();
 
-	void Magia(java::lang::String nome, int poder_Magia, java::lang::String descricao, java::Elemento::Elemento elemento);
+	void Magia(string nome, int poder_Magia, string descricao, Elemento elemento);
 
 	void Magia();
 
