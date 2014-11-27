@@ -20,7 +20,7 @@ protected:
 public:
 
 	Mago();
-	Mago(string nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
+	Mago(const string& ,const string&, const int&, const int&, const int&, const int&, const int&, const int&);
 	Mago(const Mago&);
 	~Mago(); 
 	
