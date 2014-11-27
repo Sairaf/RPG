@@ -56,3 +56,39 @@ ostream& operator<<(ostream&, const Equipamento& equipamento){
  return output;
 }
 
+void Equipamento::setAtk(const int& stat){
+ if(stat>= 0)
+  this->bonus_Atk = stat;
+ else
+  this->bonus_Atk = 0;
+}
+
+void Equipamento::setDef(const int& stat){
+ if(stat>= 0)
+  this->bonus_Def = stat;
+ else
+  this->bonus_Def = 0;
+}
+
+void Equipamento::setMag(const int& stat){
+ if(stat>= 0)
+  this->bonus_Mag = stat;
+ else
+  this->bonus_Mag = 0;
+}
+
+void Equipamento::setVel(const int& stat){
+ if(stat>= 0)
+  this->bonus_Vel = stat;
+ else
+  this->bonus_Vel = 0;
+}
+
+void Equipamento::setElemento(const Elemento& elemento){
+ string aux = >eleemento.getNome()
+ if(elemento!= null && !aux.empty())
+  this->Efeito_Elemental= elemento;
+ else
+  this->Efeito_Elemental= NULL;
+}
+
