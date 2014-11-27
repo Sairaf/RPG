@@ -32,11 +32,13 @@ public:
 	void setDef(const int&);
 	void setMag(const int&);
 	void setVel(const int&);
+	void setEfeito(const Elemento&);
 	
 	int getAtk() const;
-	ing getDef() const;
-	ing getMag() const;
-	ing getVel() const;
+	int getDef() const;
+	int getMag() const;
+	int getVel() const;
+	Elemento getElemento() const;
 	
 	virtual void Add_Bonus(const int&) = 0;
 	//virtual void Add_Efeito(const Elemento& elemento) = 0;
