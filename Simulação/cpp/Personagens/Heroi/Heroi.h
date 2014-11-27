@@ -60,7 +60,7 @@ public:
 	
 	void Subir_de_Nivel();
 	void Equipar(Equipamento equipamento);
-
+	virtual void Def_Stats() = 0;
 };
 
 
