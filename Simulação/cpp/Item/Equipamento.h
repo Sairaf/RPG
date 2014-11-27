@@ -26,7 +26,11 @@ public:
 	Equipamento(const string nome, string descricao, int b_Atk, int b_Def, int b_Mag, int b_Vel),const Elemento&;
 	~Equipamento();
 
-	virtual void Add_Bonus(const int&) = 0;
+	void setAtk(const int&);
+	void setAtk(const int&);
+	void setAtk(const int&);
+	
+	void Add_Bonus(const int&) = 0;
 	//virtual void Add_Efeito(const Elemento& elemento) = 0;
 
 	
