@@ -18,8 +18,8 @@ protected:
 	Magia Tecnica;
 public:
 
-	void Guerreiro();
-	void Guerreiro(string nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
+	Guerreiro(string nome = "Guerreiro", string descricao = "Descricao");
+	Guerreiro(const string& ,const string&, const int&, const int&, const int&, const int&, const int&, const int&);
 	
 	void Adicionar_Tecnica(Magia magia);
 	void Equipar(const Equipamento&);
