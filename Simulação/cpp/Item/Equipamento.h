@@ -37,7 +37,7 @@ public:
 	ing getMag() const;
 	ing getVel() const;
 	
-	void Add_Bonus(const int&) = 0;
+	virtual void Add_Bonus(const int&) = 0;
 	//virtual void Add_Efeito(const Elemento& elemento) = 0;
 
 	
