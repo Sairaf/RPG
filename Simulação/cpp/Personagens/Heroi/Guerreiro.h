@@ -15,7 +15,7 @@
 class Guerreiro : public Heroi
 {
 protected:
-	Magia Tecnica;
+	Magia* Tecnica;
 public:
 
 	Guerreiro(string nome = "Guerreiro", string descricao = "Descricao");
