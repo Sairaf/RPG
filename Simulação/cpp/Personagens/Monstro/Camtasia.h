@@ -13,22 +13,12 @@ using namespace std;
 class Camtasia: public Monstro
 {
 protected:
-	vector <Magia> Habilidades(4);
-	int HP;
-	int MP;
-	int ataque;
-	int defesa;
-	int velocidade;
-	int magia;
-	int max_Hp;
-	int max_Mp;
-	string nome_Monstro;
-	string descricao;
+
 	Magia Raio_De_Gelo;
 
 public:
 	Camtasia(string nome = "CAMTASIA");
-    Camtasia(string nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
+    	Camtasia(string nome, int hp, int mp, int ataque, int defesa, int magia, int velocidade);
 	~Camtasia();
 	Camtasia(const Camtasia&)
 
