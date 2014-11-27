@@ -24,7 +24,7 @@ public:
 	void Adicionar_Tecnica(Magia magia);
 	void Equipar(const Equipamento&);
 	void Guerreiro();
-
+ 	void Def_Stats();
 };
 
 #endif
