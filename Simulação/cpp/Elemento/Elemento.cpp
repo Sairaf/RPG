@@ -1,26 +1,26 @@
-#include <string>
-#include <vector>
-#include <list>
-#include <iostream>
-#include <assert.h>
-
 #include "Elemento.h"
 
-namespace java
-{
-namespace Elemento
+Elemento::Elemento(string nome)
+:nome_Elemento(nome)
 {
 
-void Elemento::Elemento()
-{
+}
+Elemento::Elemento(const string& nome){
+  this->setNome_Elemento(nome);
 }
 
-void Elemento::Elemento(java::lang::String nome)
+Elemento::Elemento(const Elemento& elemento_Cpy)
 {
+ this->nome_Elemento = elemento_Cpy.nome_Elemento;
 }
 
-void Elemento::Elemento()
-{
+Elemento::~Elemento(){
+
 }
-}  // namespace Elemento
-}  // namespace java
+
+ostream& operator<<(ostream& output, const Elemento& elemento){
+ output <<"Nome do elemento:" << elemento.getNome_Elemento();
+ return output;
+}
+
+ void Add_Efeito();

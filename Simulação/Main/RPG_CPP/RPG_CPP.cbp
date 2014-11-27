@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="RPG_CPP" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="Personagem\;Monstro\;Magia\;Item\;Elemento\;Menu\;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/RPG_CPP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/RPG_CPP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../cpp/Elemento/Efeito_Secundario.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../cpp/Elemento/Elemento.cpp">
+			<Option virtualFolder="Elemento/" />
+		</Unit>
+		<Unit filename="../../cpp/Elemento/Elemento.h">
+			<Option virtualFolder="Elemento/" />
+		</Unit>
+		<Unit filename="../../cpp/Elemento/Gelo.cpp">
+			<Option virtualFolder="Elemento/" />
+		</Unit>
+		<Unit filename="../../cpp/Elemento/Gelo.h">
+			<Option virtualFolder="Elemento/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Acessorio.cpp">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Acessorio.h">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Arma.cpp">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Arma.h">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Armadura.cpp">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Armadura.h">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Equipamento.cpp">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Equipamento.h">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Item.cpp">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Item.h">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Pocao_Pequena.cpp">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Item/Pocao_Pequena.h">
+			<Option virtualFolder="Item/" />
+		</Unit>
+		<Unit filename="../../cpp/Magias/Magia.cpp">
+			<Option virtualFolder="Magia/" />
+		</Unit>
+		<Unit filename="../../cpp/Magias/Magia.h">
+			<Option virtualFolder="Magia/" />
+		</Unit>
+		<Unit filename="../../cpp/Magias/Raio_De_Gelo.h">
+			<Option virtualFolder="Magia/" />
+		</Unit>
+		<Unit filename="../../cpp/Menu/Menu.cpp">
+			<Option virtualFolder="Menu/" />
+		</Unit>
+		<Unit filename="../../cpp/Menu/Menu.h">
+			<Option virtualFolder="Menu/" />
+		</Unit>
+		<Unit filename="../../cpp/Menu/main.cpp">
+			<Option virtualFolder="Menu/" />
+		</Unit>
+		<Unit filename="../../cpp/Outros/teste_Dungeon.cpp">
+			<Option virtualFolder="Menu/" />
+		</Unit>
+		<Unit filename="../../cpp/Personagens/Heroi/Guerreiro.cpp">
+			<Option virtualFolder="Personagem/" />
+		</Unit>
+		<Unit filename="../../cpp/Personagens/Heroi/Guerreiro.h">
+			<Option virtualFolder="Personagem/" />
+		</Unit>
+		<Unit filename="../../cpp/Personagens/Heroi/Heroi.cpp">
+			<Option virtualFolder="Personagem/" />
+		</Unit>
+		<Unit filename="../../cpp/Personagens/Heroi/Heroi.h">
+			<Option virtualFolder="Personagem/" />
+		</Unit>
+		<Unit filename="../../cpp/Personagens/Heroi/Ladino.cpp">
+			<Option virtualFolder="Personagem/" />
+		</Unit>
+		<Unit filename="../../cpp/Personagens/Heroi/Ladino.h">
+			<Option virtualFolder="Personagem/" />
+		</Unit>
+		<Unit filename="../../cpp/Personagens/Heroi/Mago.cpp">
+			<Option virtualFolder="Personagem/" />
+		</Unit>
+		<Unit filename="../../cpp/Personagens/Heroi/Mago.h">
+			<Option virtualFolder="Personagem/" />
+		</Unit>
+		<Unit filename="../../cpp/Personagens/Monstro/Camtasia.h">
+			<Option virtualFolder="Monstro/" />
+		</Unit>
+		<Unit filename="../../cpp/Personagens/Monstro/Monstro.cpp">
+			<Option virtualFolder="Monstro/" />
+		</Unit>
+		<Unit filename="../../cpp/Personagens/Monstro/Monstro.h">
+			<Option virtualFolder="Monstro/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

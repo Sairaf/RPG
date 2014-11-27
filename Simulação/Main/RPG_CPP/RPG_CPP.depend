@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1417057350 source:c:\users\abgerson\documents\github\prog2_final\simulação\cpp\elemento\efeito_secundario.c
+	<cstdlib>
+	<string>
+	<vector>
+
+1417059151 source:c:\users\abgerson\documents\github\prog2_final\simulação\cpp\elemento\elemento.cpp
+	"Elemento.h"
+
+1417059141 c:\users\abgerson\documents\github\prog2_final\simulação\cpp\elemento\elemento.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+

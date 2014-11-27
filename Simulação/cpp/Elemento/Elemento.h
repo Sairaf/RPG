@@ -7,26 +7,27 @@
 #include <iostream>
 #include <assert.h>
 
+using namespace std;
 
-namespace java
-{
-namespace Elemento
-{
 class Elemento
 {
+ friend ostream& operator<<(ostream&, const Elemento&);
 protected:
 	string nome_Elemento;
 
-
 public:
-	void Elemento();
+	Elemento(string nome = "Elemento");
+	Elemento(const string& );
+	Elemento(const Elemento&);
+	~Elemento();
 
-	void Elemento(string nome);
+    void setNome_Elemento(const string&);
+    string getNome_Elemento() const;
 
-	void Elemento();
 
+    Elemento* operator=(const Elemento&);
+    virtual void Add_Efeito() = 0;
 };
 
-}  // namespace Elemento
-}  // namespace java
+
 #endif

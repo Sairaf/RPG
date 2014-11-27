@@ -1,6 +1,7 @@
 #ifndef JAVA_ELEMENTO_GELO_H
 #define JAVA_ELEMENTO_GELO_H
 
+#include "Elemento.h"
 #include <string>
 #include <vector>
 #include <list>
@@ -8,21 +9,20 @@
 #include <assert.h>
 
 
-namespace java
-{
-namespace Elemento
-{
 class Gelo: public Elemento
 {
-public:
-	void Gelo();
+ friend ostream& operator<<(ostream&, const Gelo&);
+  public:
+	Gelo();
+	Gelo(string nome);
+	Gelo(const Gelo&)
+	~Gelo();
 
-	void Gelo(string nome);
+    void setNome_Elemento(const string&);
+    string getNome_Elemento() const;
 
-	void Gelo();
-
+   void Add_Efeito()
 };
 
-}  // namespace Elemento
-}  // namespace java
+
 #endif
