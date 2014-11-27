@@ -1,5 +1,5 @@
-#ifndef JAVA_PERSONAGENS_HEROI_MAGO_H
-#define JAVA_PERSONAGENS_HEROI_MAGO_H
+#ifndef MAGO_H
+#define MAGO_H
 
 #include <string>
 #include <vector>
@@ -11,32 +11,28 @@
 #include "Magia.h"
 #include "Heroi.h"
 
-namespace java
-{
-namespace Personagens
-{
-namespace Heroi
-{
 class Mago : public Heroi
 {
 protected:
-	Magia lista_Magias;
+	Magia* lista_Magias;
 
 
 public:
-	void Adicionar_Magia();
 
-	void Mago();
-
-	void Mago(string nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
-
+	Mago();
+	Mago(string nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
+	Mago(const Mago&);
+	~Mago(); 
+	
+	void set_Magia_Mago(const Magia&);
+	
+	Magia* get_Magias_Mago() const;
+	Magia  get_Magia_Mago(const int&) const;
+	
 	void Equipar(const Equipamento&);
-
-	void Mago();
+	void Adicionar_Magia(const Magia&);
 
 };
 
-}  // namespace Heroi
-}  // namespace Personagens
-}  // namespace java
+
 #endif
