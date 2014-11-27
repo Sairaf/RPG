@@ -1,5 +1,5 @@
-#ifndef JAVA_MAGIAS_MAGIA_H
-#define JAVA_MAGIAS_MAGIA_H
+#ifndef MAGIA_H
+#define MAGIA_H
 
 #include <string>
 #include <vector>
