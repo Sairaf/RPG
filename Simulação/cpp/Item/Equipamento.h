@@ -1,5 +1,5 @@
-#ifndef JAVA_ITEM_EQUIPAMENTO_H
-#define JAVA_ITEM_EQUIPAMENTO_H
+#ifndef EQUIPAMENTO_H
+#define EQUIPAMENTO_H
 
 #include <string>
 #include <vector>
@@ -26,7 +26,7 @@ public:
 	Equipamento(const string nome, string descricao, int b_Atk, int b_Def, int b_Mag, int b_Vel),const Elemento&;
 	~Equipamento();
 
-	void Add_Efeito(java::Elemento::Elemento elemento);
+	virtual void Add_Efeito(java::Elemento::Elemento elemento) = 0;
 
 	
 
