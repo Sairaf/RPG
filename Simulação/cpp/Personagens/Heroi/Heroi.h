@@ -37,6 +37,8 @@ protected:
 public:
 	Heroi(string nome = "HERO", string descricai = "UM HEROI");
 	Heroi(const string& nome,const string& descricao, int hp, int mp, int ataque, int defesa, int magia, int velocidade);
+	Heroi(const Heroi&);
+	~Heroi();
 	
 	void set_Nome_Heroi(const string&);
 	void set_Descricao_Heroi(const string&);
