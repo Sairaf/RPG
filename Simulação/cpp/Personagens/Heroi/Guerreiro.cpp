@@ -1,37 +1,34 @@
-#include <string>
-#include <vector>
-#include <list>
-#include <iostream>
-#include <assert.h>
-
 #include "Guerreiro.h"
 
-namespace java
+Guerreiro::Guerreiro(string nome, string descricao)
+:Heroi(nome,descricao)
 {
-namespace Personagens
-{
-namespace Heroi
-{
+  this->Tecnica = NULL;
+}
 
-void Guerreiro::Adicionar_Tecnica(java::Magias::Magia magia)
+Guerreiro::Guerreiro(const string& nome,const int& hp,const int& mp,const int& ataque,const int& defesa, const int& magia,const int& velocidade)
+:Heroi(nome, hp, mp, ataque, defesa, magia, velocidade)
+{
+ this->tecnica = NULL;  
+}
+
+Guerreiro::~Guerreio(){
+  delete [] this->Tecnica;
+}
+
+void Guerreiro::Adicionar_Tecnica(Magia magia)
+{
+ if(magia != null)  {
+   this->Tecnica = new Magia;
+   
+ }
+}
+
+
+
+
+void Guerreiro::Equipar(const Equipamento& equipamento)
 {
 }
 
-void Guerreiro::Guerreiro()
-{
-}
 
-void Guerreiro::Guerreiro(java::lang::String nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp)
-{
-}
-
-void Guerreiro::Equipar(java::Item::Equipamento equipamento)
-{
-}
-
-void Guerreiro::Guerreiro()
-{
-}
-}  // namespace Heroi
-}  // namespace Personagens
-}  // namespace java
