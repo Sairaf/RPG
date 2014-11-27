@@ -44,6 +44,20 @@ void Item::set_Durabilidade(const int& durabilidade){
     this->durabilidade = 1;
 }
 
+string Item::get_Nome_Item() const{
+  return this->nome_Item;
+}
+
+string Item::get_Descricao_Item() const{
+  return this->descricao_Item;
+}
+
+int Item::get_Durabilidade() const{
+  return this->durabilidade;
+}
+
 ostream& operator<<(ostream& output, const Item& item){
  output << "Nome do item" : item.get_Nome_Item() << endl;
+ output << "Descricao do item" : item.get_Descricao_Item() << endl;
+ output << "Durabilidade" : item.get_Durabilidade() << endl;
 }
