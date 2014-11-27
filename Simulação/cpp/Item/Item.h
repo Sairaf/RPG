@@ -26,6 +26,10 @@ public:
 	void set_Descricao_Item(const string&);
 	void set_Durabilidade(const int&);
 	
+	string set_Nome_Item() const;
+	string set_Descricao_Item() const;
+	int set_Durabilidade() const;
+	
 	virtual void Diminuir_Durabilidade() = 0;
 
 };
