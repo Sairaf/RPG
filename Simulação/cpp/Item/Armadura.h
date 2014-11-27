@@ -17,7 +17,7 @@ protected:
 	Elemento elemento;
 public:
 	Armadura(int b_Defesa = 0);
-	Armardura(const string& nome,const string& descricao,const int& b_Atk,const& int b_Def,const& int b_Mag,const int& p_Def);
+	Armardura(const string& nome,const string& descricao,const int& b_Atk,const& int b_Def,const& int b_Mag,const Elemento&, const int& p_Def);
 	~Armadura();
 
 	void set_P_Def(const int&);
