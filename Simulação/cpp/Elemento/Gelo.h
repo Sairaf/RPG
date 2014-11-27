@@ -13,8 +13,7 @@ class Gelo: public Elemento
 {
  friend ostream& operator<<(ostream&, const Gelo&);
   public:
-	Gelo();
-	Gelo(string nome);
+        Gelo(string nome = "Gelo");
 	Gelo(const Gelo&);
 	~Gelo();
 
