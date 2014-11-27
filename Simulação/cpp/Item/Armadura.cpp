@@ -1,26 +1,37 @@
-#include <string>
-#include <vector>
-#include <list>
-#include <iostream>
-#include <assert.h>
-
 #include "Armadura.h"
 
-namespace java
-{
-namespace Item
-{
 
-void Armadura::Armadura()
+Armadura::Armadura(const int& bonus)
+:Equipamento(bonus)
+
+Armadura::Armardura(const string& nome,const string& descricao,const int& b_Atk, const int&  b_Def, const int&  b_Mag, const int&  p_Def,const Elemento& elemento,const int& bonus)
+:Equipamento(nome, descricao, b_Atk, b_Def, b_Mag,b_Vel,elemento)
+{
+ this->Add_Bonus(bonus);
+}
+
+Armadura::~Armadura()
 {
 }
 
-void Armadura::Armardura(java::lang::String nome, java::lang::String descricao, int b_Atk, int b_Def, int b_Mag, int p_Def)
+Armadura::Armadura(const Armadura& armadura_Cpy)
+:Equipamento(armadura_Cpy)
 {
+  this->poder_Defesa = armadura_Cpy->poder_Defesa;
 }
 
-void Armadura::Armadura()
-{
+void Armadura::set_P_Def(const int& bonus){
+ if(bonus >= 0)  {
+  this->poder_Defesa = bonus; 
+ }else{
+  this->poder_Defesa = bonus;  
+ }
 }
-}  // namespace Item
-}  // namespace java
+
+int Armadura::get_P_Def() const{
+  return this->poder_Defesa;
+}
+
+void Armadura::Add_Bonus(const int& bonus){
+  this->set_P_Def(bonus);
+}
