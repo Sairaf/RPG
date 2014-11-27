@@ -1,5 +1,5 @@
-#ifndef JAVA_ITEM_ITEM_H
-#define JAVA_ITEM_ITEM_H
+#ifndef ITEM_H
+#define ITEM_H
 
 #include <string>
 #include <vector>
@@ -7,32 +7,28 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.h"
-#include "java/Item/Pocao_Pequena.h"
 
-namespace java
+class Item
 {
-namespace Item
-{
-class Item : public Pocao_Pequena
-{
+friend ostream& operator<<(ostream&, const Item&);
 protected:
-	java::lang::String nome_Item;
-
-	java::lang::String descricao_Item;
-
+	string nome_Item;
+	string descricao_Item;
 	int durabilidade;
 
-
 public:
-	void Item();
-
-	void Item(string nome, string descricao);
-
-	void Item();
+	Item(string nome = "Item", string descricao = "Um item");
+	Item(const string& nome,const string& descricao, const int& durabilidade);
+	Item(const Item&)
+	~Item();
+	
+	void set_Nome_Item(const string&);
+	void set_Descricao_Item(const string&);
+	void set_Durabilidade(const int&);
+	
+	virtual void Diminuir_Durabilidade() = 0;
 
 };
 
-}  // namespace Item
-}  // namespace java
+
 #endif
