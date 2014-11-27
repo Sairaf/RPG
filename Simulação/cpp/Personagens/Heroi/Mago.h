@@ -31,7 +31,7 @@ public:
 	
 	void Equipar(const Equipamento&);
 	void Adicionar_Magia(const Magia&);
-
+ 	void Def_Stats();
 };
 
 
