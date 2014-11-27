@@ -1,5 +1,5 @@
-#ifndef JAVA_MAGIAS_MAGIA_H
-#define JAVA_MAGIAS_MAGIA_H
+#ifndef MAGIA_H
+#define MAGIA_H
 
 #include <string>
 #include <vector>
@@ -9,31 +9,33 @@
 
 #include "Elemento.h"
 
-namespace java
-{
-namespace Magias
-{
+
 class Magia
 {
+friend ostream& operator<<(ostream&, const Magia&)	;
 protected:
 	string nome_Magia;
-
 	int poder_Magia;
-
 	string descricao_Magia;
-
 	Elemento elemento;
 
-
 public:
-	void Magia();
+	Magia(string nome: "Magia", int poder_Magia = 10);
+	Magia(const string& nome,const int& poder_Magia,const string& descricao,const Elemento& elemento);
+	Magia(const Magia&);
+	~Magia();
 
-	void Magia(string nome, int poder_Magia, string descricao, Elemento elemento);
-
-	void Magia();
-
+       void set_Nome_Magia(const string&);
+       void set_Poder_Magia(const int&);
+       void set_Descricao_Magia(const string&);
+       void set_Elemento_Magia(const Elemento&);
+       
+       string   get_Nome_Magia() const;
+       int      get_Poder_Magia() const;
+       string   get_Descricao_Magia() const;
+       Elemento get_Elemento_Magia() const;
+       
+       virtual void Add_Poder(const int&) = 0;
 };
 
-}  // namespace Magias
-}  // namespace java
-#endif
+
