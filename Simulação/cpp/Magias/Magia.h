@@ -21,7 +21,7 @@ protected:
 
 public:
 	Magia(string nome: "Magia", int poder_Magia = 10);
-	Magia(const string& nome,const int& poder_Magia,const string& descricao,const Elemento& elemento);
+	Magia(const string& ,const int& ,const string& ,const Elemento&);
 	Magia(const Magia&);
 	~Magia();
 
