@@ -94,14 +94,38 @@ string Heroi::get_Nome_Heroi() const{
 string Heroi::get_Descricao_Heroi() const{
   return this->descricao
 }
-int get_HP_Heroi() const;
-int get_MAX_HP_Heroi() const;
-int get_MP_Heroi() const;
-int get_MAX_MP_Heroi() const;
-int get_Atk_Heroi() const;
-int get_Def_Heroi() const;
-int get_Mag_Heroi() const;
-int get_Vel_Heroi() const;
+
+int Heroi::get_HP_Heroi() const{
+ return this->HP;
+}
+
+int Heroi::get_MAX_HP_Heroi() const{
+ return this->MAX_HP;
+}
+
+int Heroi::get_MP_Heroi() const{
+ return this->MP;
+}
+
+int Heroi::get_MAX_MP_Heroi() const{
+ return this->MAX_MP;
+}
+
+int Heroi::get_Atk_Heroi() const{
+ return this->ataque;
+}
+
+int Heroi::get_Def_Heroi() const{
+  return this->defesa;
+}
+
+int Heroi::get_Mag_Heroi() const{
+ return this->magia
+}
+
+int Heroi::get_Vel_Heroi() const{
+ return this->velocidade;
+}
 
 
 void Heroi::Subir_de_Nivel(const int& experiencia)
@@ -111,8 +135,3 @@ void Heroi::Subir_de_Nivel(const int& experiencia)
 void Heroi::Equipar(java::Item::Equipamento equipamento)
 {
 }
-
-void Heroi::Personagem()
-{
-}
-
