@@ -24,7 +24,7 @@ public:
 	Equipamento(string nome = "Equipamento", string descricao = "**********")
 	Equipamento(int p_Atk = 0);
 	Equipamento(int p_Def = 0);
-	Equipamento(const string nome, string descricao, int b_Atk, int b_Def, int b_Mag, int b_Vel, const Elemento&);
+	Equipamento(const string& nome,const string& descricao, int b_Atk, int b_Def, int b_Mag, int b_Vel, const Elemento&);
 	~Equipamento();
 
 	void setAtk(const int&);
