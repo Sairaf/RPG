@@ -1,5 +1,5 @@
-#ifndef JAVA_ITEM_ACESSORIO_H
-#define JAVA_ITEM_ACESSORIO_H
+#ifndef ACESSORIO_H
+#define ACESSORIO_H
 
 #include <string>
 #include <vector>
@@ -7,29 +7,31 @@
 #include <iostream>
 #include <assert.h>
 
-
 #include "Equipamento.h"
 #include "Elemento.h"
 
-namespace java
-{
-namespace Item
-{
+using namespace std;
+
+
 class Acessorio : public Equipamento
 {
-protected:
-	Elemento Efeito_elemental;
+ friend ostream& operator<<(ostream&, const Acessorio&);
+ protected:
+	vector <Elemento> efeito_Secundario(10);
 
-
-public:
-	void Acessorio();
-
-	void Acessorio(string nome, string descricao, int b_Atk, int b_Def, int b_Mag, int p_Def);
-
-	void Acessorio();
-
+ public:
+	Acessorio(string nome = "Desconhecido");
+	Acessorio(const string& nome,const string& descricao,const int& b_Atk,const int& b_Def,const int& b_Mag,const int& b_Vel);
+	Acessorio(const Acessorio&);
+	~Acessorio();
+	
+	void setElemento_S(const Elemento&);
+	
+	<Elemento> getElemento() const;
+	Elemento   getElemento_Pos(const int&) const;
+	
+	Elemento* operator=(const Elemento&);
+    void Add_Elemento(const Elemento&);
 };
 
-}  // namespace Item
-}  // namespace java
 #endif

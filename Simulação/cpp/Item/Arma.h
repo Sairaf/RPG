@@ -1,20 +1,15 @@
-#ifndef JAVA_ITEM_ARMA_H
-#define JAVA_ITEM_ARMA_H
-
+#ifndef ARMA_H
+#define ARMA_H
 #include <string>
 #include <vector>
 #include <list>
 #include <iostream>
 #include <assert.h>
 
-#include "Item.h"
 #include "Equipamento.h"
 
-namespace java
-{
-namespace Item
-{
-class Arma : public Item, public Equipamento
+using namespace std;
+class Arma : public Equipamento
 {
 protected:
 	int poder_Ataque;

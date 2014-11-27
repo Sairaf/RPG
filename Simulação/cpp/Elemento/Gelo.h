@@ -15,13 +15,12 @@ class Gelo: public Elemento
   public:
 	Gelo();
 	Gelo(string nome);
-	Gelo(const Gelo&)
+	Gelo(const Gelo&);
 	~Gelo();
 
     void setNome_Elemento(const string&);
     string getNome_Elemento() const;
 
-   void Add_Efeito()
 };
 
 
