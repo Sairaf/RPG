@@ -28,4 +28,13 @@ void Arma::set_P_Atk(const int& p_Atk){
  }
 }
 
-int Arma:: 
+int Arma::get_P_Atk() const{
+ return this->poder_Ataque;
+}
+
+ostream& operator<<(ostream& output , const Arma&){
+ output << static_cast <const Equipamento&> (Arma) << "\n" 
+ output << "Poder de ataque" << Arma->get_P_Atk();
+ return output;
+}
+
