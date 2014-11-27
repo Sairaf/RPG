@@ -35,3 +35,9 @@ int Armadura::get_P_Def() const{
 void Armadura::Add_Bonus(const int& bonus){
   this->set_P_Def(bonus);
 }
+
+ostream& operator<<(ostream& output, const Armadura& armadura){
+ output << <static_cast> <const Equipamento&> Armadura <<"\n";
+ output << "Poder de defesa:" <<  armadura.get_P_Def();
+ return output;
+}
