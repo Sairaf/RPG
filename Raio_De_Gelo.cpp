@@ -1,7 +1,7 @@
 #include "Raio_De_Gelo.cpp"
 
 Raio_De_Gelo::Raio_De_Gelo(string nome, int poder)
-:Magia("Raio de Gelo",25, "Raio de gelo fraco em um inimigo, Gelo);
+:Magia("Raio de Gelo",25, "Raio de gelo fraco em um inimigo", Gelo);
 
 
 Raio_De_Gelo::Raio_De_Gelo(const string& nome, const int& poder_Magia, const string& descricao, const Elemento& elemento)
