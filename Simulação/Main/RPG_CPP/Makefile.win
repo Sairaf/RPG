@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = ../../cpp/Elemento/Efeito_Secundario.o ../../cpp/Elemento/Elemento.o ../../cpp/Elemento/Gelo.o ../../cpp/Item/Acessorio.o ../../cpp/Item/Arma.o ../../cpp/Item/Armadura.o ../../cpp/Item/Equipamento.o ../../cpp/Item/Item.o ../../cpp/Item/Pocao_Pequena.o ../../cpp/Magias/Magia.o ../../cpp/Menu/main.o ../../cpp/Menu/Menu.o ../../cpp/Outros/teste_Dungeon.o ../../cpp/Personagens/Heroi/Guerreiro.o ../../cpp/Personagens/Heroi/Heroi.o ../../cpp/Personagens/Heroi/Ladino.o ../../cpp/Personagens/Heroi/Mago.o ../../cpp/Personagens/Monstro/Monstro.o
-LINKOBJ  = ../../cpp/Elemento/Efeito_Secundario.o ../../cpp/Elemento/Elemento.o ../../cpp/Elemento/Gelo.o ../../cpp/Item/Acessorio.o ../../cpp/Item/Arma.o ../../cpp/Item/Armadura.o ../../cpp/Item/Equipamento.o ../../cpp/Item/Item.o ../../cpp/Item/Pocao_Pequena.o ../../cpp/Magias/Magia.o ../../cpp/Menu/main.o ../../cpp/Menu/Menu.o ../../cpp/Outros/teste_Dungeon.o ../../cpp/Personagens/Heroi/Guerreiro.o ../../cpp/Personagens/Heroi/Heroi.o ../../cpp/Personagens/Heroi/Ladino.o ../../cpp/Personagens/Heroi/Mago.o ../../cpp/Personagens/Monstro/Monstro.o
+OBJ      = ../../cpp/Elemento/Elemento.o ../../cpp/Elemento/Gelo.o ../../cpp/Item/Acessorio.o ../../cpp/Item/Arma.o ../../cpp/Item/Armadura.o ../../cpp/Item/Equipamento.o ../../cpp/Item/Item.o ../../cpp/Item/Pocao_Pequena.o ../../cpp/Magias/Magia.o ../../cpp/Menu/Menu.o ../../cpp/Outros/teste_Dungeon.o ../../cpp/Personagens/Heroi/Guerreiro.o ../../cpp/Personagens/Heroi/Heroi.o ../../cpp/Personagens/Heroi/Ladino.o ../../cpp/Personagens/Heroi/Mago.o ../../cpp/Personagens/Monstro/Monstro.o
+LINKOBJ  = ../../cpp/Elemento/Elemento.o ../../cpp/Elemento/Gelo.o ../../cpp/Item/Acessorio.o ../../cpp/Item/Arma.o ../../cpp/Item/Armadura.o ../../cpp/Item/Equipamento.o ../../cpp/Item/Item.o ../../cpp/Item/Pocao_Pequena.o ../../cpp/Magias/Magia.o ../../cpp/Menu/Menu.o ../../cpp/Outros/teste_Dungeon.o ../../cpp/Personagens/Heroi/Guerreiro.o ../../cpp/Personagens/Heroi/Heroi.o ../../cpp/Personagens/Heroi/Ladino.o ../../cpp/Personagens/Heroi/Mago.o ../../cpp/Personagens/Monstro/Monstro.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/lib" -static-libstdc++ -static-libgcc -g3
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include/c++"
@@ -23,9 +23,6 @@ clean: clean-custom
 
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
-
-../../cpp/Elemento/Efeito_Secundario.o: ../../cpp/Elemento/Efeito_Secundario.c
-	$(CPP) -c ../../cpp/Elemento/Efeito_Secundario.c -o ../../cpp/Elemento/Efeito_Secundario.o $(CXXFLAGS)
 
 ../../cpp/Elemento/Elemento.o: ../../cpp/Elemento/Elemento.cpp
 	$(CPP) -c ../../cpp/Elemento/Elemento.cpp -o ../../cpp/Elemento/Elemento.o $(CXXFLAGS)
@@ -53,9 +50,6 @@ $(BIN): $(OBJ)
 
 ../../cpp/Magias/Magia.o: ../../cpp/Magias/Magia.cpp
 	$(CPP) -c ../../cpp/Magias/Magia.cpp -o ../../cpp/Magias/Magia.o $(CXXFLAGS)
-
-../../cpp/Menu/main.o: ../../cpp/Menu/main.cpp
-	$(CPP) -c ../../cpp/Menu/main.cpp -o ../../cpp/Menu/main.o $(CXXFLAGS)
 
 ../../cpp/Menu/Menu.o: ../../cpp/Menu/Menu.cpp
 	$(CPP) -c ../../cpp/Menu/Menu.cpp -o ../../cpp/Menu/Menu.o $(CXXFLAGS)
