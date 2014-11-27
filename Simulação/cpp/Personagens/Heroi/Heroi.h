@@ -1,5 +1,5 @@
-#ifndef JAVA_PERSONAGENS_HEROI_HEROI_H
-#define JAVA_PERSONAGENS_HEROI_HEROI_H
+#ifndef HEROI_H
+#define H
 
 #include <string>
 #include <vector>
@@ -14,58 +14,54 @@
 #include "Arma.h"
 #include "Acessorio.h"
 
-namespace java
-{
-namespace Personagens
-{
-namespace Heroi
-{
 class Heroi : 
 {
 protected:
-	java::lang::String nomeHeroi;
-
-	java::lang::String descricao;
-
+	string nomeHeroi;
+	string descricao;
 	int pontosExperiencia;
-
+	
 	Arma arma;
-
-	java::Item::Armadura armadura;
-
+	Armadura armadura;
 	Acessorio acessorio;
 
 	int HP;
-
 	int MP;
-
 	int ataque;
-
 	int defesa;
-
 	int velocidade;
-
 	int magia;
-
-	int max_Hp;
-
-	int max_Mp;
-
+	static const  int max_Hp = 9999;
+	static const  int max_Mp = 9999;
 
 public:
-	void Heroi();
-
-	void Heroi(java::lang::String nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
-
+	Heroi(string nome = "HERO", string descricai = "UM HEROI");
+	Heroi(const string& nome,const string& descricao, int hp, int mp, int ataque, int defesa, int magia, int velocidade);
+	
+	void set_Nome_Heroi(const string&);
+	void set_Descricao_Heroi(const string&);
+	void set_HP_Heroi(const int&);
+	void set_MP_Heroi(const int&);
+	void set_Atk_Heroi(const int&);
+	void set_Def_Heroi(const int&);
+	void set_Mag_Heroi(const int&);
+	void set_Vel_Heroi(const int&);
+	
+	string get_Nome_Heroi() const;
+	string get_Descricao_Heroi() const;
+	int    get_HP_Heroi() const;
+	int    get_MAX_HP_Heroi() const;
+	int    get_MP_Heroi() const;
+	int    get_MAX_MP_Heroi() const;
+	int    get_Atk_Heroi() const;
+	int    get_Def_Heroi() const;
+	int    get_Mag_Heroi() const;
+	int    get_Vel_Heroi() const;
+	
 	void Subir_de_Nivel();
-
-	void Equipar(java::Item::Equipamento equipamento);
-
-	void Personagem();
+	void Equipar(Equipamento equipamento);
 
 };
 
-}  // namespace Heroi
-}  // namespace Personagens
-}  // namespace java
+
 #endif
