@@ -23,12 +23,18 @@ protected:
 public:
 	Equipamento(int p_Atk = 0);
 	Equipamento(int p_Def = 0);
-	Equipamento(const string nome, string descricao, int b_Atk, int b_Def, int b_Mag, int b_Vel),const Elemento&;
+	Equipamento(const string nome, string descricao, int b_Atk, int b_Def, int b_Mag, int b_Vel, const Elemento&);
 	~Equipamento();
 
 	void setAtk(const int&);
-	void setAtk(const int&);
-	void setAtk(const int&);
+	void setDef(const int&);
+	void setMag(const int&);
+	void setVel(const int&);
+	
+	int getAtk() const;
+	ing getDef() const;
+	ing getMag() const;
+	ing getVel() const;
 	
 	void Add_Bonus(const int&) = 0;
 	//virtual void Add_Efeito(const Elemento& elemento) = 0;
