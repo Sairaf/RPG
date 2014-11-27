@@ -36,7 +36,7 @@ protected:
 
 public:
 	Heroi(string nome = "HERO", string descricai = "UM HEROI");
-	Heroi(const string& nome,const string& descricao, int hp, int mp, int ataque, int defesa, int magia, int velocidade);
+	Heroi(const string& ,const string&, const int&, const int&, const int&, const int&, const int&, const int&);
 	Heroi(const Heroi&);
 	~Heroi();
 	
