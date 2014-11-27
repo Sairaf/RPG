@@ -1,5 +1,5 @@
-#ifndef JAVA_PERSONAGENS_MONSTRO_MONSTRO_H
-#define JAVA_PERSONAGENS_MONSTRO_MONSTRO_H
+#ifndef MONSTRO_H
+#define MONSTRO_H
 
 #include <string>
 #include <vector>
@@ -9,51 +9,31 @@
 
 #include "Magia.h"
 
-
-namespace java
-{
-namespace Personagens
-{
-namespace Monstro
-{
 class Monstro 
 {
 protected:
-	Magia Habilidades;
-
+        string nome_Monstro;
+	string descricao_Monstro;
+	Magia* Habilidades;
 	int HP;
-
 	int MP;
-
 	int ataque;
-
 	int defesa;
-
 	int velocidade;
-
 	int magia;
-
-	int max_Hp;
-
-	int max_Mp;
-
-	string nomeHeroi;
-
-	string descricao;
+	static const int max_Hp = 99999;
+	static const int max_Mp = 99999;
+	
 
 
 public:
-	void Monstro();
-
-	void Monstro(string nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
-
-	void Monstro();
-
+	Monstro(string nome = "Monstro", string descricao = "Descricao");
+	Monstro(const string&, const int&, const int&,const int&,const int&,const int&,const int&);
+	Monstro(const Monstro&);
+	~Monstro();
+	
 	void Add_Skill(Magia magia);
 
 };
 
-}  // namespace Monstro
-}  // namespace Personagens
-}  // namespace java
 #endif
