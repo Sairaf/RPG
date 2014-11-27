@@ -60,7 +60,7 @@ public:
 	int    get_Mag_Heroi() const;
 	int    get_Vel_Heroi() const;
 	
-	void Subir_de_Nivel();
+	void Subir_de_Nivel(const int&);
 	virtual void Equipar(Equipamento equipamento) = 0;
 	virtual void Def_Stats() = 0;
 };
