@@ -1,5 +1,6 @@
 #ifndef ARMA_H
 #define ARMA_H
+
 #include <string>
 #include <vector>
 #include <list>

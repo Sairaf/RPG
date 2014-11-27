@@ -1,5 +1,5 @@
-#ifndef JAVA_PERSONAGENS_MONSTRO_MONSTRO_H
-#define JAVA_PERSONAGENS_MONSTRO_MONSTRO_H
+#ifndef CAMTASIA_H
+#define CAMTASIAH
 
 #include <string>
 #include <vector>
@@ -9,52 +9,31 @@
 
 #include "Magia.h"
 
-
-namespace java
-{
-namespace Personagens
-{
-namespace Camtasia
-{
+using namespace std;
 class Camtasia: public Monstro
 {
 protected:
-	Magia Habilidades;
-
+	vector <Magia> Habilidades(4);
 	int HP;
-
 	int MP;
-
 	int ataque;
-
 	int defesa;
-
 	int velocidade;
-
 	int magia;
-
 	int max_Hp;
-
 	int max_Mp;
-
-	string nomeHeroi;
-
+	string nome_Monstro;
 	string descricao;
-
 	Magia Raio_De_Gelo;
 
 public:
-	void Camtasia();
+	Camtasia(string nome = "CAMTASIA");
+    Camtasia(string nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
+	~Camtasia();
+	Camtasia(const Camtasia&)
 
-	void Camtasia(string nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
-
-	void Camtasia();
-
-	void Add_Skill(Magia magia);
+	void Add_Skill(const Magia&);
 
 };
 
-}  // namespace Monstro
-}  // namespace Personagens
-}  // namespace java
 #endif
