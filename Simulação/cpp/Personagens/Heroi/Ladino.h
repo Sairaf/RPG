@@ -1,5 +1,5 @@
-#ifndef JAVA_PERSONAGENS_HEROI_LADINO_H
-#define JAVA_PERSONAGENS_HEROI_LADINO_H
+#ifndef LADINO_H
+#define LADINO_H
 
 #include <string>
 #include <vector>
@@ -10,29 +10,19 @@
 #include "Equipamento.h"
 #include "Heroi.h"
 
-
-namespace java
-{
-namespace Personagens
-{
-namespace Heroi
-{
 class Ladino : public Heroi
 {
 public:
-	void Roubar(Monstro monstro);
-
-	void Ladino();
-
-	void Ladino(String nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
-
+	
+	Ladino(string nome = "Ladino", string descricao = "Ladino");
+	Ladino(String nome, int hp, int Mp, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
+	Ladino(const Ladino&);
+	~Ladino();
+	
 	void Equipar(const Equipamento&);
-
-	void ladino();
-
+        void Roubar(Monstro monstro);
+        void Def_Stats();
 };
 
-}  // namespace Heroi
-}  // namespace Personagens
-}  // namespace java
+
 #endif
