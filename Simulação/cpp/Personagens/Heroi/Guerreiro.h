@@ -20,10 +20,11 @@ public:
 
 	Guerreiro(string nome = "Guerreiro", string descricao = "Descricao");
 	Guerreiro(const string& ,const string&, const int&, const int&, const int&, const int&, const int&, const int&);
+	~Guerreiro();
+	Guerreiro(const Guerreiro&);
 	
 	void Adicionar_Tecnica(Magia magia);
 	void Equipar(const Equipamento&);
-	void Guerreiro();
  	void Def_Stats();
 };
 
