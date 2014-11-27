@@ -61,7 +61,7 @@ public:
 	int    get_Vel_Heroi() const;
 	
 	void Subir_de_Nivel();
-	void Equipar(Equipamento equipamento);
+	virtual void Equipar(Equipamento equipamento) = 0;
 	virtual void Def_Stats() = 0;
 };
 
