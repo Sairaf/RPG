@@ -1,5 +1,5 @@
 #ifndef HEROI_H
-#define H
+#define HEROI_H
 
 #include <string>
 #include <vector>
