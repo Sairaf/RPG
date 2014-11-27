@@ -1,5 +1,5 @@
-#ifndef JAVA_ITEM_ARMADURA_H
-#define JAVA_ITEM_ARMADURA_H
+#ifndef ARMADURA_H
+#define ARMADURA_H
 
 #include <string>
 #include <vector>
@@ -7,28 +7,23 @@
 #include <iostream>
 #include <assert.h>
 
-#include "Item.h"
 #include "Equipamento.h"
 
-namespace java
-{
-namespace Item
-{
-class Armadura : public Item, public Equipamento
+
+class Armadura : public Equipamento
 {
 protected:
 	int poder_Defesa;
-
-
+	Elemento elemento;
 public:
-	void Armadura();
+	Armadura(int b_Defesa = 0);
+	Armardura(const string& nome,const string& descricao,const int& b_Atk,const& int b_Def,const& int b_Mag,const int& p_Def);
+	~Armadura();
 
-	void Armardura(string nome, string descricao, int b_Atk, int b_Def, int b_Mag, int p_Def);
-
-	void Armadura();
-
+	void set_P_Def(const int&);
+	int get_P_Def() const;
+	
+	virtual Add_Bonus(const int&) = 0;
 };
 
-}  // namespace Item
-}  // namespace java
 #endif
