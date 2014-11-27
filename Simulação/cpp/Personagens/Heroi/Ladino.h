@@ -15,7 +15,7 @@ class Ladino : public Heroi
 public:
 	
 	Ladino(string nome = "Ladino", string descricao = "Ladino");
-	Ladino(String nome, int hp, int Mp, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp);
+	Ladino(const string& ,const string&, const int&, const int&, const int&, const int&, const int&, const int&);
 	Ladino(const Ladino&);
 	~Ladino();
 	
