@@ -12,6 +12,7 @@
 
 class Equipamento : public Item
 {
+friend ostream& operator<<(ostream&, const Equipamento&);
 protected:
 	int bonus_Atk;
 	int bonus_Def;
