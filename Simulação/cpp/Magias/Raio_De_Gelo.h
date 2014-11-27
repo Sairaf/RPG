@@ -13,7 +13,7 @@ class Raio_De_gelo: public Magia
 {
 public:
 	void Raio_De_Gelo(string nome = "Raio de Gelo", int poder = 20);
-	void Magia(string nome, int poder_Magia, string descricao, Elemento elemento);
+	void Magia(const string&, const int&, const string&, const Elemento&);
 	void Magia();
 
 	void Add_Poder(const int&);
