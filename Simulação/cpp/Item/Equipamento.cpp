@@ -48,7 +48,11 @@ void Equipamento::Equipamento(const Equipamento& equipamento_Cpy)
 
 ostream& operator<<(ostream&, const Equipamento& equipamento){
  output << <static_cast> <const Item&> (equipamento) << "\n";
- output << "Poder de ataque:" equipamento.getAtk() << endl;
- output << "Poder de ataque:" equipamento.getAtk() << endl;
+ output << "Bonus de ataque:" << equipamento.getAtk() << endl;
+ output << "Bonus de defesa:" << equipamento.getDef() << endl;
+ output << "Bonus de magia:"  << equipamento.getMag() << endl;
+ output << "Bonus de velocidade:" << equipamento.getVel() << endl;
+ output << "Elemento:" equipamento.getElemento() << endl;
+ return output;
 }
 
