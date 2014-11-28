@@ -9,22 +9,20 @@
 
 #include "Armadura.h"
 #include "Equipamento.h"
-#include "Mover.h"
-#include "Atributos.h"
 #include "Arma.h"
 #include "Acessorio.h"
 
-class Heroi : 
+class Heroi
 {
 protected:
 	string nomeHeroi;
 	string descricao;
 	int pontosExperiencia;
 	
-	Arma arma;
-	Armadura armadura;
-	Acessorio acessorio;
-
+//	Arma arma;
+//	Armadura armadura;
+//	Acessorio acessorio;
+    int lv_Atual;
 	int HP;
 	int MP;
 	int ataque;
@@ -61,7 +59,7 @@ public:
 	int    get_Vel_Heroi() const;
 	
 	void Subir_de_Nivel(const int&);
-	virtual void Equipar(Equipamento equipamento) = 0;
+//	virtual void Equipar(Equipamento equipamento) = 0;
 	virtual void Def_Stats() = 0;
 };
 

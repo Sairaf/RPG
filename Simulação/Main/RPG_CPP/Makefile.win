@@ -1,73 +1,75 @@
 # Project: RPG_CPP
-# Makefile created by Dev-C++ 5.7.1
+# Makefile created by Dev-C++ 4.9.9.2
 
-CPP      = g++.exe
-CC       = gcc.exe
-WINDRES  = windres.exe
-OBJ      = ../../cpp/Elemento/Elemento.o ../../cpp/Elemento/Gelo.o ../../cpp/Item/Acessorio.o ../../cpp/Item/Arma.o ../../cpp/Item/Armadura.o ../../cpp/Item/Equipamento.o ../../cpp/Item/Item.o ../../cpp/Item/Pocao_Pequena.o ../../cpp/Magias/Magia.o ../../cpp/Menu/Menu.o ../../cpp/Outros/teste_Dungeon.o ../../cpp/Personagens/Heroi/Guerreiro.o ../../cpp/Personagens/Heroi/Heroi.o ../../cpp/Personagens/Heroi/Ladino.o ../../cpp/Personagens/Heroi/Mago.o ../../cpp/Personagens/Monstro/Monstro.o
-LINKOBJ  = ../../cpp/Elemento/Elemento.o ../../cpp/Elemento/Gelo.o ../../cpp/Item/Acessorio.o ../../cpp/Item/Arma.o ../../cpp/Item/Armadura.o ../../cpp/Item/Equipamento.o ../../cpp/Item/Item.o ../../cpp/Item/Pocao_Pequena.o ../../cpp/Magias/Magia.o ../../cpp/Menu/Menu.o ../../cpp/Outros/teste_Dungeon.o ../../cpp/Personagens/Heroi/Guerreiro.o ../../cpp/Personagens/Heroi/Heroi.o ../../cpp/Personagens/Heroi/Ladino.o ../../cpp/Personagens/Heroi/Mago.o ../../cpp/Personagens/Monstro/Monstro.o
-LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/lib" -static-libstdc++ -static-libgcc -g3
-INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include"
-CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include/c++"
-BIN      = RPG_CPP.exe
-CXXFLAGS = $(CXXINCS) -g3
-CFLAGS   = $(INCS) -g3
-RM       = rm.exe -f
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = Acessorio.o Arma.o Armadura.o Equipamento.o Guerreiro.o Heroi.o Item.o Ladino.o Magia.o Mago.o main.o Menu.o Monstro.o Raio_De_Gelo.o teste_Dungeon.o Espada.o $(RES)
+LINKOBJ  = Acessorio.o Arma.o Armadura.o Equipamento.o Guerreiro.o Heroi.o Item.o Ladino.o Magia.o Mago.o main.o Menu.o Monstro.o Raio_De_Gelo.o teste_Dungeon.o Espada.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  -fmessage-length=0 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = RPG_CPP.exe
+CXXFLAGS = $(CXXINCS)   -fmessage-length=0
+CFLAGS = $(INCS)   -fmessage-length=0
+RM = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
 
-all: all-before $(BIN) all-after
+all: all-before RPG_CPP.exe all-after
+
 
 clean: clean-custom
 	${RM} $(OBJ) $(BIN)
 
 $(BIN): $(OBJ)
-	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+	$(CPP) $(LINKOBJ) -o "RPG_CPP.exe" $(LIBS)
 
-../../cpp/Elemento/Elemento.o: ../../cpp/Elemento/Elemento.cpp
-	$(CPP) -c ../../cpp/Elemento/Elemento.cpp -o ../../cpp/Elemento/Elemento.o $(CXXFLAGS)
+Acessorio.o: Acessorio.cpp
+	$(CPP) -c Acessorio.cpp -o Acessorio.o $(CXXFLAGS)
 
-../../cpp/Elemento/Gelo.o: ../../cpp/Elemento/Gelo.cpp
-	$(CPP) -c ../../cpp/Elemento/Gelo.cpp -o ../../cpp/Elemento/Gelo.o $(CXXFLAGS)
+Arma.o: Arma.cpp
+	$(CPP) -c Arma.cpp -o Arma.o $(CXXFLAGS)
 
-../../cpp/Item/Acessorio.o: ../../cpp/Item/Acessorio.cpp
-	$(CPP) -c ../../cpp/Item/Acessorio.cpp -o ../../cpp/Item/Acessorio.o $(CXXFLAGS)
+Armadura.o: Armadura.cpp
+	$(CPP) -c Armadura.cpp -o Armadura.o $(CXXFLAGS)
 
-../../cpp/Item/Arma.o: ../../cpp/Item/Arma.cpp
-	$(CPP) -c ../../cpp/Item/Arma.cpp -o ../../cpp/Item/Arma.o $(CXXFLAGS)
+Equipamento.o: Equipamento.cpp
+	$(CPP) -c Equipamento.cpp -o Equipamento.o $(CXXFLAGS)
 
-../../cpp/Item/Armadura.o: ../../cpp/Item/Armadura.cpp
-	$(CPP) -c ../../cpp/Item/Armadura.cpp -o ../../cpp/Item/Armadura.o $(CXXFLAGS)
+Guerreiro.o: Guerreiro.cpp
+	$(CPP) -c Guerreiro.cpp -o Guerreiro.o $(CXXFLAGS)
 
-../../cpp/Item/Equipamento.o: ../../cpp/Item/Equipamento.cpp
-	$(CPP) -c ../../cpp/Item/Equipamento.cpp -o ../../cpp/Item/Equipamento.o $(CXXFLAGS)
+Heroi.o: Heroi.cpp
+	$(CPP) -c Heroi.cpp -o Heroi.o $(CXXFLAGS)
 
-../../cpp/Item/Item.o: ../../cpp/Item/Item.cpp
-	$(CPP) -c ../../cpp/Item/Item.cpp -o ../../cpp/Item/Item.o $(CXXFLAGS)
+Item.o: Item.cpp
+	$(CPP) -c Item.cpp -o Item.o $(CXXFLAGS)
 
-../../cpp/Item/Pocao_Pequena.o: ../../cpp/Item/Pocao_Pequena.cpp
-	$(CPP) -c ../../cpp/Item/Pocao_Pequena.cpp -o ../../cpp/Item/Pocao_Pequena.o $(CXXFLAGS)
+Ladino.o: Ladino.cpp
+	$(CPP) -c Ladino.cpp -o Ladino.o $(CXXFLAGS)
 
-../../cpp/Magias/Magia.o: ../../cpp/Magias/Magia.cpp
-	$(CPP) -c ../../cpp/Magias/Magia.cpp -o ../../cpp/Magias/Magia.o $(CXXFLAGS)
+Magia.o: Magia.cpp
+	$(CPP) -c Magia.cpp -o Magia.o $(CXXFLAGS)
 
-../../cpp/Menu/Menu.o: ../../cpp/Menu/Menu.cpp
-	$(CPP) -c ../../cpp/Menu/Menu.cpp -o ../../cpp/Menu/Menu.o $(CXXFLAGS)
+Mago.o: Mago.cpp
+	$(CPP) -c Mago.cpp -o Mago.o $(CXXFLAGS)
 
-../../cpp/Outros/teste_Dungeon.o: ../../cpp/Outros/teste_Dungeon.cpp
-	$(CPP) -c ../../cpp/Outros/teste_Dungeon.cpp -o ../../cpp/Outros/teste_Dungeon.o $(CXXFLAGS)
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
 
-../../cpp/Personagens/Heroi/Guerreiro.o: ../../cpp/Personagens/Heroi/Guerreiro.cpp
-	$(CPP) -c ../../cpp/Personagens/Heroi/Guerreiro.cpp -o ../../cpp/Personagens/Heroi/Guerreiro.o $(CXXFLAGS)
+Menu.o: Menu.cpp
+	$(CPP) -c Menu.cpp -o Menu.o $(CXXFLAGS)
 
-../../cpp/Personagens/Heroi/Heroi.o: ../../cpp/Personagens/Heroi/Heroi.cpp
-	$(CPP) -c ../../cpp/Personagens/Heroi/Heroi.cpp -o ../../cpp/Personagens/Heroi/Heroi.o $(CXXFLAGS)
+Monstro.o: Monstro.cpp
+	$(CPP) -c Monstro.cpp -o Monstro.o $(CXXFLAGS)
 
-../../cpp/Personagens/Heroi/Ladino.o: ../../cpp/Personagens/Heroi/Ladino.cpp
-	$(CPP) -c ../../cpp/Personagens/Heroi/Ladino.cpp -o ../../cpp/Personagens/Heroi/Ladino.o $(CXXFLAGS)
+Raio_De_Gelo.o: Raio_De_Gelo.cpp
+	$(CPP) -c Raio_De_Gelo.cpp -o Raio_De_Gelo.o $(CXXFLAGS)
 
-../../cpp/Personagens/Heroi/Mago.o: ../../cpp/Personagens/Heroi/Mago.cpp
-	$(CPP) -c ../../cpp/Personagens/Heroi/Mago.cpp -o ../../cpp/Personagens/Heroi/Mago.o $(CXXFLAGS)
+teste_Dungeon.o: teste_Dungeon.cpp
+	$(CPP) -c teste_Dungeon.cpp -o teste_Dungeon.o $(CXXFLAGS)
 
-../../cpp/Personagens/Monstro/Monstro.o: ../../cpp/Personagens/Monstro/Monstro.cpp
-	$(CPP) -c ../../cpp/Personagens/Monstro/Monstro.cpp -o ../../cpp/Personagens/Monstro/Monstro.o $(CXXFLAGS)
+Espada.o: Espada.cpp
+	$(CPP) -c Espada.cpp -o Espada.o $(CXXFLAGS)

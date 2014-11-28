@@ -23,7 +23,7 @@ public:
 	~Guerreiro();
 	Guerreiro(const Guerreiro&);
 	
-	void Adicionar_Tecnica(Magia magia);
+ 	void Adicionar_Tecnica(const Magia&);
 	void Equipar(const Equipamento&);
  	void Def_Stats();
 };

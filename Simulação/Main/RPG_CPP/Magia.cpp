@@ -3,16 +3,16 @@
 Magia::Magia(string nome, int poder)
 :nome_Magia(nome), poder_Magia(poder)
 {
- this->descricao = "Desconhecida"  ;
- this->elemento = NULL;
+ this->set_Descricao_Magia("Desconhecida");
+ this->set_Elemento_Magia("Sem tipo");
 }
 
-Magia::Magia(const string& nome, const int& poder_Magia, const string& descricao, const Elemento& elemento)
+Magia::Magia(const string& nome, const int& poder_Magia, const string& descricao, const string& elemento)
 {
-  this->nome_Magia = nome;
-  this->poder_Magia = poder_Magia;
-  this->descricao = descricao;
-  this->elemento = elemento;
+  this->set_Nome_Magia(nome);
+  this->set_Poder_Magia(poder_Magia);
+  this->set_Descricao_Magia(descricao);
+  this->set_Elemento_Magia(elemento);
 }
 
 Magia::Magia(const Magia& magia_Cpy){
@@ -27,10 +27,11 @@ Magia::~Magia()
 }
 
 void Magia::set_Nome_Magia(const string& nome){
-  if(nome.empty() == false){
+  if(nome.empty() == false )
+  {
     this->nome_Magia = nome;
   }else{
-    this->nome_Magia = "LeMagia";
+    this->nome_Magia = "Desconhecida";
   }
 }
 
@@ -81,3 +82,14 @@ ostream& operator<<(ostream& output, const Magia& magia){
   output << "Elemento da magia" << magia.elemento.getNome_Elemento() << endl;
   return output;
 }
+
+bool Magia::operator==(const Magia& magia){
+ if(this.nome_Magia == magia.nome_Magia  && this.poder_Magia == magia.poder Magia && this.descricao_Magia == magia.descricao_Magia && this.elemento == magia.elemento)   
+  return true;
+ else
+  return false;
+}     
+     
+bool Magia::operator!=(const Magia& magia){
+  return !(*this == magia);
+}  
