@@ -1,5 +1,5 @@
-#ifndef JAVA_ELEMENTO_GELO_H
-#define JAVA_ELEMENTO_GELO_H
+#ifndef GELO_H
+#define GELO_H
 
 #include "Elemento.h"
 #include <string>
@@ -13,13 +13,12 @@ class Gelo: public Elemento
 {
  friend ostream& operator<<(ostream&, const Gelo&);
   public:
-        Gelo(string nome = "Gelo");
-	Gelo(const Gelo&);
-	~Gelo();
+    Gelo();
 
     void setNome_Elemento(const string&);
     string getNome_Elemento() const;
 
+    void Add_Efeito();
 };
 
 

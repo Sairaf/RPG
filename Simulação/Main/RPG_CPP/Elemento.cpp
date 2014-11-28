@@ -5,9 +5,6 @@ Elemento::Elemento(string nome)
 {
 
 }
-Elemento::Elemento(const string& nome){
-  this->setNome_Elemento(nome);
-}
 
 Elemento::Elemento(const Elemento& elemento_Cpy)
 {

@@ -13,20 +13,20 @@
 using namespace std;
 class Arma : public Equipamento
 {
- friend ostream& operator<<(ostream& output, const Arma&);	
+ friend ostream& operator<<(ostream& output, const Arma&);
 protected:
 	int poder_Ataque;
-	Elemento elemento;
+
 public:
 	Arma(int poder_Ataque = 0);
 	Arma(const string&, const string&,const int& b_Atk,const int& b_Def,const int& b_Mag,const int& b_Vel, const int& p_Atk);
 	Arma(const Arma&);
 	~Arma();
-	
+
     void set_P_Atk(const int&);
     int  get_P_Atk() const;
-    
-    virtual Add_Bonus(const int&) = 0;
+
+    virtual void Add_Bonus(const int&) = 0;
 };
 
 #endif

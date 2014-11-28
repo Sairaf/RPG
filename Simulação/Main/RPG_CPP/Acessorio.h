@@ -9,7 +9,7 @@
 
 #include "Equipamento.h"
 #include "Elemento.h"
-
+#include "Gelo.h"
 using namespace std;
 
 
@@ -17,21 +17,20 @@ class Acessorio : public Equipamento
 {
  friend ostream& operator<<(ostream&, const Acessorio&);
  protected:
-	vector <Elemento> efeito_Secundario(10);
+	//Elemento* efeito_Secundario;
 
  public:
 	Acessorio(string nome = "Desconhecido");
-	Acessorio(const string& nome,const string& descricao,const int& b_Atk,const int& b_Def,const int& b_Mag,const int& b_Vel);
+	Acessorio(const string& nome,const string& descricao,const int& b_Atk,const int& b_Def,const int& b_Mag,const int& b_Vel, const Elemento&);
 	Acessorio(const Acessorio&);
 	~Acessorio();
-	
-	void setElemento_S(const Elemento&);
-	
-	<Elemento> getElemento() const;
-	Elemento   getElemento_Pos(const int&) const;
-	
+
+//	void setElemento_S(const Elemento&);
+
+//	Elemento* getElemento() const;
+
 	Elemento* operator=(const Elemento&);
-    void Add_Elemento(const Elemento&);
+    virtual void Add_Elemento(const int&) = 0;
 };
 
 #endif

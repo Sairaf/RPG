@@ -4,13 +4,94 @@
 	<string>
 	<vector>
 
-1417059151 source:c:\users\abgerson\documents\github\prog2_final\simulação\cpp\elemento\elemento.cpp
+1417135616 source:c:\users\abgerson\documents\github\prog2_final\simulação\cpp\elemento\elemento.cpp
 	"Elemento.h"
 
-1417059141 c:\users\abgerson\documents\github\prog2_final\simulação\cpp\elemento\elemento.h
+1417135663 c:\users\abgerson\documents\github\prog2_final\simulação\cpp\elemento\elemento.h
 	<string>
 	<vector>
 	<list>
 	<iostream>
 	<assert.h>
+
+1417135594 source:c:\users\abgerson\documents\github\prog2_final\simulação\cpp\elemento\gelo.cpp
+	"Gelo.h"
+
+1417135483 c:\users\abgerson\documents\github\prog2_final\simulação\cpp\elemento\gelo.h
+	"Elemento.h"
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+
+1417145593 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\acessorio.cpp
+	"Acessorio.h"
+
+1417145385 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\acessorio.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+	"Equipamento.h"
+	"Elemento.h"
+	"Gelo.h"
+
+1417146579 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\equipamento.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+	"Item.h"
+	"Elemento.h"
+
+1417136081 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\item.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+
+1417137627 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\elemento.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+
+1417137707 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\gelo.h
+	"Elemento.h"
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+
+1417145709 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\arma.cpp
+	"Arma.h"
+
+1417145377 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\arma.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+	"Equipamento.h"
+	"Elemento.h"
+
+1417146347 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\armadura.cpp
+	"Armadura.h"
+
+1417146262 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\armadura.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+	"Equipamento.h"
+
+1417135616 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\elemento.cpp
+	"Elemento.h"
 

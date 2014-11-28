@@ -15,16 +15,17 @@ class Armadura : public Equipamento
  friend ostream& operator<<(ostream&, const Armadura&);
  protected:
 	int poder_Defesa;
-	Elemento elemento;
+	//Elemento elemento;
 public:
-	Armadura(int b_Defesa = 0);
-	Armardura(const string& nome,const string& descricao,const int& b_Atk,const& int b_Def,const& int b_Mag,const Elemento&, const int& p_Def);
+	Armadura(const int& b_Defesa = 0);
+	Armadura(const string&, const string&, const int&,const int&,const int&,const int&,const int&);
+	Armadura(const Armadura&);
 	~Armadura();
 
 	void set_P_Def(const int&);
 	int get_P_Def() const;
-	
-	virtual Add_Bonus(const int&) = 0;
+
+	virtual void Add_Bonus(const int&) = 0;
 };
 
 #endif

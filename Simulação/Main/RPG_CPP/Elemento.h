@@ -1,5 +1,5 @@
-#ifndef JAVA_ELEMENTO_ELEMENTO_H
-#define JAVA_ELEMENTO_ELEMENTO_H
+#ifndef ELEMENTO_H
+#define ELEMENTO_H
 
 #include <string>
 #include <vector>
@@ -17,7 +17,7 @@ protected:
 
 public:
 	Elemento(string nome = "Elemento");
-	Elemento(const string& );
+//	Elemento(const string& );
 	Elemento(const Elemento&);
 	~Elemento();
 

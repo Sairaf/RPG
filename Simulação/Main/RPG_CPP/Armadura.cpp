@@ -2,10 +2,11 @@
 
 
 Armadura::Armadura(const int& bonus)
-:Equipamento(bonus)
+:Equipamento(bonus){
+}
 
-Armadura::Armardura(const string& nome,const string& descricao,const int& b_Atk, const int&  b_Def, const int&  b_Mag, const int&  p_Def,const Elemento& elemento,const int& bonus)
-:Equipamento(nome, descricao, b_Atk, b_Def, b_Mag,b_Vel,elemento)
+Armadura::Armadura(const string& nome, const string& descricao, const int& b_Atk, const int& b_Def, const int&b_Mag, const int&b_Vel, const int& bonus)
+:Equipamento(nome, descricao, b_Atk, b_Def, b_Mag,b_Vel)
 {
  this->Add_Bonus(bonus);
 }
@@ -17,14 +18,14 @@ Armadura::~Armadura()
 Armadura::Armadura(const Armadura& armadura_Cpy)
 :Equipamento(armadura_Cpy)
 {
-  this->poder_Defesa = armadura_Cpy->poder_Defesa;
+ this->poder_Defesa = armadura_Cpy.poder_Defesa;
 }
 
 void Armadura::set_P_Def(const int& bonus){
  if(bonus >= 0)  {
-  this->poder_Defesa = bonus; 
+  this->poder_Defesa = bonus;
  }else{
-  this->poder_Defesa = bonus;  
+  this->poder_Defesa = bonus;
  }
 }
 
@@ -37,7 +38,7 @@ void Armadura::Add_Bonus(const int& bonus){
 }
 
 ostream& operator<<(ostream& output, const Armadura& armadura){
- output << <static_cast> <const Equipamento&> Armadura <<"\n";
+ output << static_cast <const Equipamento&> (armadura) <<"\n";
  output << "Poder de defesa:" <<  armadura.get_P_Def();
  return output;
 }
