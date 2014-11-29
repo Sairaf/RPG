@@ -1,33 +1,35 @@
-#include <string>
-#include <vector>
-#include <list>
-#include <iostream>
-#include <assert.h>
-
 #include "Monstro.h"
 
-namespace java
-{
-namespace Personagens
-{
-namespace Monstro
+
+Monstro::Monstro(string nome, string descricao)
+:nome_Monstro(nome), descricao_Monstro(descricao)
 {
 
-void Monstro::Monstro()
-{
+ this->Habilidades = new Magia;
+ this->set_HP_Monstro(100);
+ this->set_MP_Monstro(100);
+ this->set_Atk_Monstro(10);
+ this->set_Def_Monstro(10);
+ this->set_Mag_Monstro(5);
+ this->set_Vel_Monstro(5);
 }
 
-void Monstro::Monstro(java::lang::String nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp)
+Monstro::Monstro(const string& nome,const string& descricao_Monstro, const int& hp, const int& mp, const int& ataque, const int& defesa, const int& magia, const int& velocidade)
 {
+ this->Habilidades = new Magia;
+ this->set_HP_Monstro(100);
+ this->set_MP_Monstro(100);
+ this->set_Atk_Monstro(10);
+ this->set_Def_Monstro(10);
+ this->set_Mag_Monstro(5);
+ this->set_Vel_Monstro(5);
 }
 
-void Monstro::Monstro()
+Monstro::~Monstro()
 {
+ delete [] this->Habilidades;
 }
 
-void Monstro::Add_Skill(java::Magias::Magia magia)
+void Monstro::Add_Skill(Magia magia)
 {
 }
-}  // namespace Monstro
-}  // namespace Personagens
-}  // namespace java

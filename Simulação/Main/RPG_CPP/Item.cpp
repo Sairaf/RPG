@@ -20,7 +20,7 @@ Item::~Item()
 
 Item::Item(const Item& item_Cpy){
   this->nome_Item = item_Cpy.nome_Item;
-  this->descricao_Item = item_Cpy.descricao;
+  this->descricao_Item = item_Cpy.descricao_Item;
   this->durabilidade = item_Cpy.durabilidade;
 }
 
@@ -32,14 +32,14 @@ void Item::set_Nome_Item(const string& nome){
 }
 void Item::set_Descricao_Item(const string&descricao){
   if(descricao.empty() == false)
-   this->descricao_Item = item_Cpy.descricao;
+   this->descricao_Item =descricao;
   else
    this->descricao_Item = "Desconhecido";
 }
 
 void Item::set_Durabilidade(const int& durabilidade){
   if(durabilidade >= 1)
-   this->durabilidade = item_Cpy.durabilidade;
+   this->durabilidade = durabilidade;
   else
     this->durabilidade = 1;
 }
@@ -57,7 +57,7 @@ int Item::get_Durabilidade() const{
 }
 
 ostream& operator<<(ostream& output, const Item& item){
- output << "Nome do item" : item.get_Nome_Item() << endl;
- output << "Descricao do item" : item.get_Descricao_Item() << endl;
- output << "Durabilidade" : item.get_Durabilidade() << endl;
+ output << "Nome do item" << item.get_Nome_Item() << endl;
+ output << "Descricao do item" << item.get_Descricao_Item() << endl;
+ output << "Durabilidade" << item.get_Durabilidade() << endl;
 }

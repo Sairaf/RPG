@@ -20,7 +20,7 @@ class Acessorio : public Equipamento
 	//Elemento* efeito_Secundario;
 
  public:
-	Acessorio(string nome = "Desconhecido");
+	Acessorio(int atk = 0);
 	Acessorio(const string& nome,const string& descricao,const int& b_Atk,const int& b_Def,const int& b_Mag,const int& b_Vel, const Elemento&);
 	Acessorio(const Acessorio&);
 	~Acessorio();

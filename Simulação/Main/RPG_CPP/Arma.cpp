@@ -42,3 +42,8 @@ ostream& operator<<(ostream& output , const Arma& arma){
  return output;
 }
 
+void Arma::Add_Bonus(const int& bonus){
+   int aux = this->get_P_Atk();
+   aux+=bonus;
+   this->setAtk(aux) ;
+}

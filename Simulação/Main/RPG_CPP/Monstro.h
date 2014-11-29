@@ -5,16 +5,17 @@
 #include <vector>
 #include <list>
 #include <iostream>
-#include <assert.h>
+#include <string.h>
 
 #include "Magia.h"
 
-class Monstro 
+class Monstro
 {
 protected:
-        string nome_Monstro;
+    string nome_Monstro;
 	string descricao_Monstro;
 	Magia* Habilidades;
+	int num_Hab;
 	int HP;
 	int MP;
 	int ataque;
@@ -23,15 +24,15 @@ protected:
 	int magia;
 	static const int max_Hp = 99999;
 	static const int max_Mp = 99999;
-	
+
 
 
 public:
 	Monstro(string nome = "Monstro", string descricao = "Descricao");
-	Monstro(const string&, const int&, const int&,const int&,const int&,const int&,const int&);
+	Monstro(const string&,const string&, const int&, const int&,const int&,const int&,const int&,const int&);
 	Monstro(const Monstro&);
 	~Monstro();
-	
+
 	void set_Nome_Monstro(const string&);
 	void set_Descricao_Monstro(const string&);
 	void set_HP_Monstro(const int&);
@@ -41,7 +42,7 @@ public:
 	void set_Mag_Monstro(const int&);
 	void set_Vel_Monstro(const int&);
 	void set_Habilidade_Monstro(const Magia&);
-	
+
 	string get_Nome_Monstro() const;
 	string get_Descricao_Monstro() const;
 	int get_HP_Monstro() const;
@@ -54,7 +55,7 @@ public:
 	int get_Vel_Monstro() const;
 	Magia* get_Habilidades_Monstro () const;
 	Magia get_Habilidades_Monstro (const int&) const;
-	
+
 	virtual void Add_Skill(Magia magia) = 0;
 
 };

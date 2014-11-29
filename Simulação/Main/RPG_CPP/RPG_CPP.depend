@@ -25,10 +25,10 @@
 	<iostream>
 	<assert.h>
 
-1417145593 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\acessorio.cpp
+1417288347 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\acessorio.cpp
 	"Acessorio.h"
 
-1417145385 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\acessorio.h
+1417288432 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\acessorio.h
 	<string>
 	<vector>
 	<list>
@@ -69,10 +69,10 @@
 	<iostream>
 	<assert.h>
 
-1417145709 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\arma.cpp
+1417288671 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\arma.cpp
 	"Arma.h"
 
-1417145377 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\arma.h
+1417288449 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\arma.h
 	<string>
 	<vector>
 	<list>
@@ -94,4 +94,105 @@
 
 1417135616 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\elemento.cpp
 	"Elemento.h"
+
+1417146674 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\equipamento.cpp
+	"Equipamento.h"
+
+1417281760 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\guerreiro.cpp
+	"Guerreiro.h"
+
+1417281609 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\guerreiro.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<stdlib.h>
+	<assert.h>
+	<time.h>
+	"Equipamento.h"
+	"Magia.h"
+	"Heroi.h"
+
+1417286424 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\magia.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+	"Elemento.h"
+
+1417275893 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\heroi.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<assert.h>
+	"Armadura.h"
+	"Equipamento.h"
+	"Arma.h"
+	"Acessorio.h"
+
+1417275946 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\heroi.cpp
+	"Heroi.h"
+
+1417281875 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\item.cpp
+	"Item.h"
+
+1417286145 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\ladino.cpp
+	"Ladino.h"
+
+1417284864 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\ladino.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"monstro.h"
+	"Equipamento.h"
+	"Heroi.h"
+
+1417288191 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\monstro.h
+	<string>
+	<vector>
+	<list>
+	<iostream>
+	<string.h>
+	"Magia.h"
+
+1417286698 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\magia.cpp
+	"Magia.h"
+
+1417287196 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\mago.cpp
+	"Mago.h"
+
+1417287105 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\mago.h
+	<string>
+	<vector>
+	<list>
+	"Equipamento.h"
+	"Magia.h"
+	"Heroi.h"
+
+1385316878 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\main.cpp
+	<iostream>
+
+1416974403 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\menu.cpp
+	"Menu.h"
+
+1416974403 c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\menu.h
+	<iostream>
+	<cstdlib>
+
+1417288228 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\monstro.cpp
+	"Monstro.h"
+
+1417053363 source:c:\users\abgerson\documents\github\prog2_final\simulação\main\rpg_cpp\teste_dungeon.cpp
+	<locale>
+	<iostream>
+	<cstdlib>
+	<string>
+	<string.h>
+	<conio.h>
+	<vector>
 

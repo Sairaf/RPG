@@ -84,3 +84,19 @@ void Equipamento::setElemento(const Elemento& elemento){
 }
 
 */
+
+int Equipamento::getAtk() const {
+return this->bonus_Atk;
+}
+
+int Equipamento::getDef() const {
+return this->bonus_Def;
+}
+
+int Equipamento::getMag() const {
+return this->bonus_Mag;
+}
+
+int Equipamento::getVel() const {
+return this->bonus_Vel;
+}

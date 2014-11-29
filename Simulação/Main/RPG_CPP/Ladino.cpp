@@ -1,37 +1,52 @@
-#include <string>
-#include <vector>
-#include <list>
-#include <iostream>
-#include <assert.h>
-
 #include "Ladino.h"
 
-namespace java
-{
-namespace Personagens
-{
-namespace Heroi
-{
 
+Ladino::Ladino( string nome, string descricao)
+:Heroi(nome, descricao)
+{
+}
+
+Ladino::Ladino(const string& nome, const string& descricao, const int& hp, const int& mp, const int& ataque, const int& defesa, const int& magia, const int& velocidade)
+:Heroi(nome,descricao, hp, mp, ataque, defesa, magia, velocidade)
+{
+}
+
+
+void Ladino::Subir_De_Nivel(const int& experiencia)
+{
+ srand(time(NULL));
+ int b_Random = rand() %5 + 0;
+ int excedente = experiencia - this->pontosExperiencia;
+ this->pontosExperiencia-= experiencia;
+ if(this->pontosExperiencia == 0 && this->lv_Atual <= MAX_LV){
+  this->lv_Atual++;
+  this->HP = 24 + b_Random;
+  this->MP = 22 + b_Random;
+  this->ataque = 4 + b_Random;
+  this->defesa = 2 + b_Random -1;
+  this->magia = 3+ b_Random;
+  this->velocidade = 6 + b_Random;
+  this->pontosExperiencia*= 1.25;
+ }else if(this->pontosExperiencia < 0 && this->lv_Atual <= MAX_LV){
+  this->lv_Atual++;
+  this->HP = 24 + b_Random;
+  this->MP = 22 + b_Random;
+  this->ataque = 4 + b_Random;
+  this->defesa = 2 + b_Random -1;
+  this->magia = 3+ b_Random;
+  this->velocidade = 6 + b_Random;
+  this->pontosExperiencia*= 1.25;
+  this->Subir_De_Nivel(excedente);
+ }
+}
+
+/*
 void Ladino::Roubar(Monstro monstro)
 {
+
 }
 
-void Ladino::Ladino()
+void Ladino::Equipar(Equipamento equipamento)
 {
 }
-
-void Ladino::Ladino(java::lang::String nome, int hp, int p, int ataque, int defesa, int magia, int velocidade, int maxHp, int maxMp)
-{
-}
-
-void Ladino::Equipar(java::Item::Equipamento equipamento)
-{
-}
-
-void Ladino::ladino()
-{
-}
-}  // namespace Heroi
-}  // namespace Personagens
-}  // namespace java
+*/

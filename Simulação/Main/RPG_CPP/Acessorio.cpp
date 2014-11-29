@@ -1,7 +1,7 @@
 #include "Acessorio.h"
 
-Acessorio::Acessorio(string nome)
-:Equipamento(nome)
+Acessorio::Acessorio(int atk)
+:Equipamento(atk)
 {
  int i;
  //this->Add_Elemento(0);

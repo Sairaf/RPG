@@ -18,10 +18,11 @@ protected:
 	string nomeHeroi;
 	string descricao;
 	int pontosExperiencia;
-	
+
 //	Arma arma;
 //	Armadura armadura;
 //	Acessorio acessorio;
+    static const int MAX_LV = 10;
     int lv_Atual;
 	int HP;
 	int MP;
@@ -29,15 +30,15 @@ protected:
 	int defesa;
 	int velocidade;
 	int magia;
-	static const  int max_Hp = 9999;
-	static const  int max_Mp = 9999;
+	static const  int MAX_HP = 9999;
+	static const  int MAX_MP = 9999;
 
 public:
 	Heroi(string nome = "HERO", string descricai = "UM HEROI");
 	Heroi(const string& ,const string&, const int&, const int&, const int&, const int&, const int&, const int&);
 	Heroi(const Heroi&);
 	~Heroi();
-	
+
 	void set_Nome_Heroi(const string&);
 	void set_Descricao_Heroi(const string&);
 	void set_HP_Heroi(const int&);
@@ -46,7 +47,7 @@ public:
 	void set_Def_Heroi(const int&);
 	void set_Mag_Heroi(const int&);
 	void set_Vel_Heroi(const int&);
-	
+
 	string get_Nome_Heroi() const;
 	string get_Descricao_Heroi() const;
 	int    get_HP_Heroi() const;
@@ -57,8 +58,8 @@ public:
 	int    get_Def_Heroi() const;
 	int    get_Mag_Heroi() const;
 	int    get_Vel_Heroi() const;
-	
-	void Subir_de_Nivel(const int&);
+
+	virtual void Subir_de_Nivel(const int&);
 //	virtual void Equipar(Equipamento equipamento) = 0;
 	virtual void Def_Stats() = 0;
 };

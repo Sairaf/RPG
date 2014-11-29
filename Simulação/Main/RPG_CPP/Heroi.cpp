@@ -1,45 +1,41 @@
 #include "Heroi.h"
 
-void Heroi::Heroi(string nome, string descricao)
+Heroi::Heroi(string nome, string descricao)
 :nomeHeroi(nome), descricao(descricao)
 {
+ this->lv_Atual =1;
  this->pontosExperiencia = 1000;
- this->arma = NULL;
- this->armadura = NULL;
- this->acessorio = NULL;;
  this->HP = 100;
  this->MP = 100;
  this->ataque = 5;
  int defesa = 5;
  int velocidade = 5;
- int magia = 5
+ int magia = 5;
 }
 
 Heroi::Heroi(const string& nome, const string& descricao,const int& hp,const int& mp,const int& ataque,const int& defesa,const int& magia,const int& velocidade)
 {
+ this->lv_Atual =1;
  this->nomeHeroi = nome;
  this->descricao = descricao;
  this->pontosExperiencia = 1000;
- this->arma = NULL;
- this->armadura = NULL;
- this->acessorio = NULL;;
  this->HP = hp;
  this->MP = mp;
  this->ataque = ataque;
  this->defesa = defesa;
  this->velocidade = velocidade;
- this->magia = magia;  
+ this->magia = magia;
 }
 
 void Heroi::set_Nome_Heroi(const string& nome){
-  if(nome.empty() == false)  
+  if(nome.empty() == false)
    this->nomeHeroi = nome;
   else
    this->nomeHeroi = "Loto";
 }
 
 void Heroi::set_Descricao_Heroi(const string& descricao){
-  if(descricao.empty() == false)  
+  if(descricao.empty() == false)
    this->descricao = descricao;
   else
    this->descricao = "NAO INFORMADA";
@@ -92,7 +88,7 @@ string Heroi::get_Nome_Heroi() const{
 }
 
 string Heroi::get_Descricao_Heroi() const{
-  return this->descricao
+  return this->descricao;
 }
 
 int Heroi::get_HP_Heroi() const{
@@ -120,7 +116,7 @@ int Heroi::get_Def_Heroi() const{
 }
 
 int Heroi::get_Mag_Heroi() const{
- return this->magia
+ return this->magia;
 }
 
 int Heroi::get_Vel_Heroi() const{
@@ -128,10 +124,4 @@ int Heroi::get_Vel_Heroi() const{
 }
 
 
-void Heroi::Subir_de_Nivel(const int& experiencia)
-{
-}
 
-void Heroi::Equipar(java::Item::Equipamento equipamento)
-{
-}

@@ -27,12 +27,14 @@ public:
        void set_Poder_Magia(const int&);
        void set_Descricao_Magia(const string&);
        void set_Elemento_Magia(const string&);
-       
+
        string   get_Nome_Magia() const;
        int      get_Poder_Magia() const;
        string   get_Descricao_Magia() const;
-       
+       string   get_Elemento_Magia() const;
+
        bool operator==(const Magia&);
+       Magia* operator=(const Magia&);
        bool operator!=(const Magia&);
        void Add_Poder(const int&);
 };

@@ -26,7 +26,7 @@ public:
     void set_P_Atk(const int&);
     int  get_P_Atk() const;
 
-    virtual void Add_Bonus(const int&) = 0;
+    void Add_Bonus(const int&) = 0;
 };
 
 #endif
