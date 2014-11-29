@@ -24,7 +24,7 @@ void Guerreiro::Adicionar_Tecnica(const Magia& magia)
  Magia* aux_Magia = new Magia[this->num_Magia];
  if(this->num_Magia == 0){
    ++this->num_Magia;
-   this->Tecnica[this->num_Magia-1] == magia;
+   this->Tecnica[this->num_Magia-1] = magia;
  }else{
 
   for(i = 0; i < this->num_Magia; i++)
@@ -40,7 +40,7 @@ void Guerreiro::Adicionar_Tecnica(const Magia& magia)
     this->Tecnica[this->num_Magia-1] = magia;
 
  }
-
+  delete []  aux_Magia;
 }
 
 void Guerreiro::Subir_De_Nivel(const int& experiencia)
@@ -76,4 +76,14 @@ void Guerreiro::Equipar(const Equipamento& equipamento)
 {
 }
 
+
+void Guerreiro::Def_Stats(){
+ this->lv_Atual =1;
+ this->HP = 100;
+ this->MP = 20;
+ this->ataque = 15;
+ this->defesa = 14;
+ this->velocidade = 5;
+ this->magia = 5;
+}
 

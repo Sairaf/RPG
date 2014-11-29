@@ -4,7 +4,8 @@
 #include <string>
 #include <vector>
 #include <list>
-
+#include <time.h>
+#include <stdlib.h>
 
 #include "Equipamento.h"
 #include "Magia.h"
@@ -29,6 +30,7 @@ public:
 	Magia  get_Magia_Mago(const int&) const;
 
 	void Equipar(const Equipamento&);
+	void Subir_De_Nivel(const int&);
 	void Adicionar_Magia(const Magia&);
  	void Def_Stats();
 };

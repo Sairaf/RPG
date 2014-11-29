@@ -27,6 +27,10 @@ Heroi::Heroi(const string& nome, const string& descricao,const int& hp,const int
  this->magia = magia;
 }
 
+
+Heroi::~Heroi(){
+}
+
 void Heroi::set_Nome_Heroi(const string& nome){
   if(nome.empty() == false)
    this->nomeHeroi = nome;
@@ -119,9 +123,13 @@ int Heroi::get_Mag_Heroi() const{
  return this->magia;
 }
 
+void Heroi::Subir_de_Nivel(const int& exp){
+}
+
 int Heroi::get_Vel_Heroi() const{
  return this->velocidade;
 }
+
 
 
 
