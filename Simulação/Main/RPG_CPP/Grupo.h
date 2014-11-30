@@ -5,7 +5,7 @@
 #include "Heroi.h"
 #include "Item.h"
 #include <vector>
-#include "Monstro.h""
+#include "Monstro.h"
 using namespace std;
 
 class Grupo:
