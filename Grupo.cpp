@@ -9,7 +9,7 @@
 -{
 - cout << strPtr[0];
 -}
--*/*/
+-*/
 
 
 Grupo::Grupo()
@@ -63,4 +63,30 @@ ostream& operator<<(ostream& output, const Grupo& gruppo)
  }
 }
 
-void Grupo::
+void Grupo::Text_Menu()
+{
+ cout << "1 - Mostrar inventario"  << endl;
+ cout << "2 - Mostrar status dos personagens" << endl;
+ cout << "3 - Sair" endl;
+}
+
+
+void Grupo::Menu()
+{
+ int opcao;
+ this->Text_Menu();
+ cin >> opcao;
+ switch(opcao)
+ case: 1
+ break;
+ case 2:
+ break;
+ case3:
+ 
+ break;
+ default:
+ system("cls");
+ cout >> "Opcao invalida" << endl;;
+ this->Text_Menu)(;
+ cin >> opcao;)
+}
