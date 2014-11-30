@@ -5,7 +5,7 @@
 #include "Heroi.h"
 #include "Item.h"
 #include <vector>
-
+#include "Monstro.h""
 using namespace std;
 
 class Grupo:
@@ -21,7 +21,7 @@ class Grupo:
     
     void set_Heroi(const Heroi&);
     void set_Item(const Item&);
-    
+    void Batalhat(const Monstro&);
     <Heroi> get_Heroi() const;
     <Item> get_Item() const;
     
