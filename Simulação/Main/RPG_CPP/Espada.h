@@ -1,4 +1,4 @@
-#define MAGIA_H
+#define ESPADA_H
 
 #include <string>
 #include <vector>
